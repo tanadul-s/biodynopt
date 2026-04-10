@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biodynopt"
+version = "26.03"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "meshio",
+    "gmsh",
+    "ngsolve",
+    "pyvista",
+    "embreex",
+    "trimesh",
+    "pyyaml",
+    "jupyter",
+    "jupyter_contrib_nbextensions",
+    "webgui_jupyter_widgets",
+    "mpi4py",
+    "petsc4py",
+    "rich",
+    "pytest",
+    "pytest-xdist",
+]
+requires-python = ">= 3.12"
+authors = [{name = "Tanadul Somboonwong", email = "tanadul.sob@student.mahidol.ac.th"},]
+maintainers = [{name = "Tanadul Somboonwong", email = "tanadul.sob@student.mahidol.ac.th"},]
+description = "Biodynamic Monitoring using Optical Measurement"
+readme = "README.md"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-xdist",
+]
+cli = [
+    "click",
+    "rich",
+]
